@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 52983548}
+  - component: {fileID: 52983549}
   m_Layer: 0
   m_Name: Vegitation
   m_TagString: Untagged
@@ -154,6 +155,270 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52983549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52983547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f710250abab6f24a954bdf3c3c1ac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 0
+  terrains:
+  - {fileID: 1904823561}
+  visibleTerrainsOnly: 0
+  treeTypes:
+  - enabled: 1
+    name: Tree_01
+    seed: 9904
+    probability: 10
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 100, y: 600}
+    slopeRange: {x: 0, y: 15}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 236
+    prefabs:
+    - index: 0
+      probability: 100
+      prefab: {fileID: 2222111361404534124, guid: 88f2fd29f58b9734683512546acec310, type: 3}
+    distance: 7
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Tree_02
+    seed: 134
+    probability: 10
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 100, y: 600}
+    slopeRange: {x: 0, y: 15}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 241
+    prefabs:
+    - index: 1
+      probability: 100
+      prefab: {fileID: 4661435515762455780, guid: e289bf5debb17f6459818c207d781953, type: 3}
+    distance: 7
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Tree_03
+    seed: 3121
+    probability: 10
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 100, y: 600}
+    slopeRange: {x: 0, y: 15}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 461
+    prefabs:
+    - index: 2
+      probability: 100
+      prefab: {fileID: 6941765000743290380, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
+    distance: 5
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Tree_04
+    seed: 26591
+    probability: 10
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 100, y: 600}
+    slopeRange: {x: 0, y: 15}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 228
+    prefabs:
+    - index: 3
+      probability: 100
+      prefab: {fileID: 2807449429036958551, guid: f0c16f0ea935ea64297ca1d4d55d9746, type: 3}
+    distance: 7
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Rock_01
+    seed: 84169
+    probability: 3
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 600}
+    slopeRange: {x: 0, y: 30}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 167
+    prefabs:
+    - index: 4
+      probability: 100
+      prefab: {fileID: 7405846476849542632, guid: c6308cb7062fac34e8e50600086b12a1, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Rock_04
+    seed: 8581
+    probability: 3
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 600}
+    slopeRange: {x: 0, y: 30}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 140
+    prefabs:
+    - index: 5
+      probability: 100
+      prefab: {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Rock_05
+    seed: 5615
+    probability: 3
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 600}
+    slopeRange: {x: 0, y: 30}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 145
+    prefabs:
+    - index: 6
+      probability: 100
+      prefab: {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Rock_02
+    seed: 9002
+    probability: 3
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 600}
+    slopeRange: {x: 0, y: 30}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 158
+    prefabs:
+    - index: 7
+      probability: 100
+      prefab: {fileID: 5202732821079448320, guid: cebfacc247a640945a2c30b442202fca, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  - enabled: 1
+    name: Rock_03
+    seed: 6108
+    probability: 3
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 0, y: 600}
+    slopeRange: {x: 0, y: 30}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 140
+    prefabs:
+    - index: 8
+      probability: 100
+      prefab: {fileID: 4680757731160225450, guid: 0fde05fa0f3321942a21896ff4f0856f, type: 3}
+    distance: 10
+    scaleRange: {x: 0.8, y: 1.2}
+    sinkAmount: 0
+  grassPrefabs:
+  - enabled: 1
+    name: GreeblePanel_01_snaps002
+    seed: 52186
+    probability: 25
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 95, y: 600}
+    slopeRange: {x: 0, y: 15}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 0
+    index: 0
+    type: 1
+    renderAsBillboard: 1
+    prefab: {fileID: 1409135906686212, guid: 6f14da1c47b1eba4ca7b676b7b566a5d, type: 3}
+    gpuInstancing: 1
+    holeEdgePadding: 2
+    alignToGround: 100
+    positionJitter: 0
+    useDensityScaling: 1
+    density: 1
+    billboard: {fileID: 2800000, guid: 2c528fec5d95e4ac28cf46399b887662, type: 3}
+    mainColor: {r: 1, g: 1, b: 1, a: 1}
+    secondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    linkColors: 1
+    minMaxHeight: {x: 0.5, y: 1}
+    minMaxWidth: {x: 0.8, y: 1.2}
+    noiseSize: 0.1
+  - enabled: 1
+    name: GrassFrond02AlbedoAlpha
+    seed: 8481
+    probability: 25
+    collisionCheck: 0
+    rejectUnderwater: 0
+    heightRange: {x: 95, y: 600}
+    slopeRange: {x: 0, y: 15}
+    curvatureRange: {x: 0, y: 1}
+    layerMasks: []
+    instanceCount: 52346
+    index: 1
+    type: 1
+    renderAsBillboard: 1
+    prefab: {fileID: 0}
+    gpuInstancing: 1
+    holeEdgePadding: 2
+    alignToGround: 100
+    positionJitter: 0
+    useDensityScaling: 1
+    density: 1
+    billboard: {fileID: 2800000, guid: d6cdc79ec19714fcd980ca3f6ac01a0a, type: 3}
+    mainColor: {r: 1, g: 1, b: 1, a: 1}
+    secondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    linkColors: 1
+    minMaxHeight: {x: 0.5, y: 1}
+    minMaxWidth: {x: 0.8, y: 1.2}
+    noiseSize: 0.1
+  terrainSettings:
+    drawTreesAndFoliage: 1
+    preservePrefabLayer: 1
+    treeLightProbes: 0
+    treeDistance: 1000
+    billboardStart: 300
+    maxMeshTrees: 50
+    detailScattermode: 0
+    grassDistance: 200
+    grassDensity: 1
+    windStrength: 0.15
+    windSpeed: 1
+    windFrequency: 2
+    wintTint: {r: 1, g: 1, b: 1, a: 1}
+  cellSize: 64
+  cellDivisions: 4
+  highPrecisionCollision: 1
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  terrainMinMaxHeight: {x: 0, y: 100}
+  detailResolution: 256
+  detailResolutionIndex: 0
+  grassPatchSize: 128
+  grassPatchSizeIndex: 4
+  tempColliders: []
+  waterHeight: 0
+  autoRespawnTrees: 1
 --- !u!114 &222262994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +561,7 @@ MonoBehaviour:
   blendMode: 0
   opacity: 100
   passIndex: 0
-  min: 90
+  min: 105
   minFalloff: 50
   max: 110
   maxFalloff: 100
@@ -405,6 +670,62 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326710810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &537908147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 1679938396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &537908154
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537908147}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &539764968
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +841,76 @@ MonoBehaviour:
   minFalloff: 50
   max: 2000
   maxFalloff: 100
+--- !u!1 &1084571955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 1679938396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1084571956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 1679938396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1084571960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084571955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1084571956}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &1145283213
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +1016,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145283213}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1317271288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317271289}
+  - component: {fileID: 1317271290}
+  - component: {fileID: 1317271291}
+  m_Layer: 6
+  m_Name: PostProcessingVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317271289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317271288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1904823562}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1317271290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317271288}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1000, y: 80, z: 1000}
+  m_Center: {x: 500, y: 40, z: 500}
+--- !u!114 &1317271291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317271288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 6a087a8527660e64191d00337a9e7c5d, type: 2}
+  isGlobal: 0
+  blendDistance: 0.25
+  weight: 1
+  priority: 0
 --- !u!1 &1442046924
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +1374,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 537908154}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084571960}
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!114 &1795830844
 MonoBehaviour:
@@ -985,11 +1453,11 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 2caa00e2027b14046a05c8f1620b8533, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeDistance: 1000
+  m_TreeBillboardDistance: 300
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 200
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -1002,8 +1470,8 @@ Terrain:
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
+  m_BakeLightProbesForTrees: 0
+  m_PreserveTreePrototypeLayers: 1
   m_DeringLightProbesForTrees: 1
   m_ReceiveGI: 1
   m_ScaleInLightmap: 0.0256
@@ -1026,7 +1494,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1317271289}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1904823563
@@ -1104,7 +1573,7 @@ MonoBehaviour:
   blendMode: 0
   opacity: 100
   passIndex: 0
-  min: 100
+  min: 115
   minFalloff: 50
   max: 300
   maxFalloff: 100
