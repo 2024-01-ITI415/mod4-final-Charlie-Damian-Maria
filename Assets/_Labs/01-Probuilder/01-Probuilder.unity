@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.35
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fee16040d6e300a459e76d86df32fe1c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.85822785, g: 1.060628, b: 0.9819376, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -174,79 +174,79 @@ MonoBehaviour:
   treeTypes:
   - enabled: 1
     name: Tree_01
-    seed: 9904
+    seed: 34030
     probability: 10
     collisionCheck: 0
     rejectUnderwater: 0
-    heightRange: {x: 100, y: 600}
+    heightRange: {x: 99, y: 600}
     slopeRange: {x: 0, y: 15}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 236
+    instanceCount: 177
     prefabs:
     - index: 0
       probability: 100
       prefab: {fileID: 2222111361404534124, guid: 88f2fd29f58b9734683512546acec310, type: 3}
     distance: 7
     scaleRange: {x: 0.8, y: 1.2}
-    sinkAmount: 0
+    sinkAmount: 0.1
   - enabled: 1
     name: Tree_02
-    seed: 134
+    seed: 77916
     probability: 10
     collisionCheck: 0
     rejectUnderwater: 0
-    heightRange: {x: 100, y: 600}
+    heightRange: {x: 99, y: 600}
     slopeRange: {x: 0, y: 15}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 241
+    instanceCount: 164
     prefabs:
     - index: 1
       probability: 100
       prefab: {fileID: 4661435515762455780, guid: e289bf5debb17f6459818c207d781953, type: 3}
     distance: 7
     scaleRange: {x: 0.8, y: 1.2}
-    sinkAmount: 0
+    sinkAmount: 0.1
   - enabled: 1
     name: Tree_03
-    seed: 3121
+    seed: 63325
     probability: 10
     collisionCheck: 0
     rejectUnderwater: 0
-    heightRange: {x: 100, y: 600}
+    heightRange: {x: 99, y: 600}
     slopeRange: {x: 0, y: 15}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 461
+    instanceCount: 316
     prefabs:
     - index: 2
       probability: 100
       prefab: {fileID: 6941765000743290380, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
     distance: 5
     scaleRange: {x: 0.8, y: 1.2}
-    sinkAmount: 0
+    sinkAmount: 0.1
   - enabled: 1
     name: Tree_04
-    seed: 26591
+    seed: 78853
     probability: 10
     collisionCheck: 0
     rejectUnderwater: 0
-    heightRange: {x: 100, y: 600}
+    heightRange: {x: 99, y: 600}
     slopeRange: {x: 0, y: 15}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 228
+    instanceCount: 156
     prefabs:
     - index: 3
       probability: 100
       prefab: {fileID: 2807449429036958551, guid: f0c16f0ea935ea64297ca1d4d55d9746, type: 3}
     distance: 7
     scaleRange: {x: 0.8, y: 1.2}
-    sinkAmount: 0
+    sinkAmount: 0.1
   - enabled: 1
     name: Rock_01
-    seed: 84169
+    seed: 32651
     probability: 3
     collisionCheck: 0
     rejectUnderwater: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 30}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 167
+    instanceCount: 180
     prefabs:
     - index: 4
       probability: 100
@@ -264,7 +264,7 @@ MonoBehaviour:
     sinkAmount: 0
   - enabled: 1
     name: Rock_04
-    seed: 8581
+    seed: 14668
     probability: 3
     collisionCheck: 0
     rejectUnderwater: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 30}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 140
+    instanceCount: 191
     prefabs:
     - index: 5
       probability: 100
@@ -282,7 +282,7 @@ MonoBehaviour:
     sinkAmount: 0
   - enabled: 1
     name: Rock_05
-    seed: 5615
+    seed: 54006
     probability: 3
     collisionCheck: 0
     rejectUnderwater: 0
@@ -290,7 +290,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 30}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 145
+    instanceCount: 185
     prefabs:
     - index: 6
       probability: 100
@@ -300,7 +300,7 @@ MonoBehaviour:
     sinkAmount: 0
   - enabled: 1
     name: Rock_02
-    seed: 9002
+    seed: 46937
     probability: 3
     collisionCheck: 0
     rejectUnderwater: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 30}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 158
+    instanceCount: 145
     prefabs:
     - index: 7
       probability: 100
@@ -318,7 +318,7 @@ MonoBehaviour:
     sinkAmount: 0
   - enabled: 1
     name: Rock_03
-    seed: 6108
+    seed: 35306
     probability: 3
     collisionCheck: 0
     rejectUnderwater: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 30}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 140
+    instanceCount: 175
     prefabs:
     - index: 8
       probability: 100
@@ -337,7 +337,7 @@ MonoBehaviour:
   grassPrefabs:
   - enabled: 1
     name: GreeblePanel_01_snaps002
-    seed: 52186
+    seed: 19640
     probability: 25
     collisionCheck: 0
     rejectUnderwater: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 15}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 0
+    instanceCount: 36918
     index: 0
     type: 1
     renderAsBillboard: 1
@@ -365,7 +365,7 @@ MonoBehaviour:
     noiseSize: 0.1
   - enabled: 1
     name: GrassFrond02AlbedoAlpha
-    seed: 8481
+    seed: 51931
     probability: 25
     collisionCheck: 0
     rejectUnderwater: 0
@@ -670,62 +670,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326710810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &537908147 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-  m_PrefabInstance: {fileID: 1679938396}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &537908154
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537908147}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &539764968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,98 +1136,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442046924}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1499384186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1499384189}
-  - component: {fileID: 1499384188}
-  - component: {fileID: 1499384187}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1499384187
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499384186}
-  m_Enabled: 1
---- !u!20 &1499384188
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499384186}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1499384189
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499384186}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1636080430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 265.56808
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1371,13 +1223,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 537908154}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1084571960}
@@ -1637,6 +1490,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
+      propertyPath: waterMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
+      propertyPath: disablePixelLights
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1667,7 +1528,6 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1499384189}
   - {fileID: 539764970}
   - {fileID: 1904823562}
   - {fileID: 2078423052}
