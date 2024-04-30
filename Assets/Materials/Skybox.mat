@@ -89,7 +89,7 @@ Material:
     - _GlossyReflections: 1
     - _GroundEnabled: 1
     - _GroundFadeAmount: 0.01
-    - _Ground_Height: -0.03
+    - _Ground_Height: -0.079
     - _HorizonSaturationAmount: 0.782
     - _HorizonSaturationFalloff: 3.47
     - _Metallic: 0
@@ -133,7 +133,7 @@ Material:
     - _CloudWindSpeed: {r: -0.5, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.9386859, g: 0.637597, b: 0.30498737, a: 1}
+    - _GroundColor: {r: 0.026922394, g: 0.38158095, b: 0.5188679, a: 0}
     - _HorizonColorDay: {r: 0.24056602, g: 0.9924841, b: 1, a: 1}
     - _HorizonColorNight: {r: 0.08736077, g: 0.07843138, b: 0.1333333, a: 0}
     - _MoonColor: {r: 1.615686, g: 1.74902, b: 1.811765, a: 0}
