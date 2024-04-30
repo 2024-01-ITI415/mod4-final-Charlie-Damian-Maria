@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public GameOverScript GameOverScript;
     public ScoreManager ScoreManager;
     public FirstPersonController FirstPersonController;
-    public void GameOver ()
+    public void GameOver()
     {
         GameOverScript.Setup(ScoreManager.score);
         if (FirstPersonController != null)
