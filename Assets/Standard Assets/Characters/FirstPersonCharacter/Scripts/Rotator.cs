@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
+    public AudioSource pickupSound;
     ScoreManager scoreManager;
     void Start()
     {
-        scoreManager = GameObject.Find("Canvas").GetComponent<ScoreManager>();
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
     // Update is called once per frame
     void Update()
@@ -13,14 +14,10 @@ public class Rotator : MonoBehaviour
         // Rotate the object on X, Y, and Z axes by specified amounts, adjusted for frame rate.
         transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
     }
-    public AudioSource pickupSound;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
             scoreManager.IncreaseScore();
             gameObject.SetActive(false);
-            pickupSound.Play();
-        }
+        pickupSound.Play();
     }
 }
