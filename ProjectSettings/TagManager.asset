@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Loader
+  - Door
   layers:
   - Default
   - TransparentFX

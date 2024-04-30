@@ -1,31 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using TMPro;
 
-namespace CameraDoorScript
+public class DoorOpener : MonoBehaviour
 {
-public class CameraOpenDoor : MonoBehaviour {
-	public float DistanceOpen=3;
-	public GameObject text;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		RaycastHit hit;
-		if (Physics.Raycast (transform.position, transform.forward, out hit, DistanceOpen)) {
-				if (hit.transform.GetComponent<DoorScript.Door> ()) {
-				text.SetActive (true);
-				if (Input.GetKeyDown(KeyCode.E))
-					hit.transform.GetComponent<DoorScript.Door> ().OpenDoor();
-			}else{
-				text.SetActive (false);
-			}
-		}else{
-			text.SetActive (false);
-		}
-	}
-}
+    public float interactionDistance = 5f;
+    public TextMeshProUGUI interactionText; 
+
+    private void Update()
+    {
+        RaycastHit hit;
+        bool doorInSight = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, interactionDistance);
+
+        // Check if a door is in sight
+        if (doorInSight && hit.transform.CompareTag("Door"))
+        {
+            interactionText.gameObject.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                DoorScript.Door door = hit.transform.gameObject.GetComponent<DoorScript.Door>();
+                if (door != null)
+                {
+                    door.OpenDoor();
+                }
+            }
+        }
+        else
+        {
+            interactionText.gameObject.SetActive(false);
+        }
+    }
 }

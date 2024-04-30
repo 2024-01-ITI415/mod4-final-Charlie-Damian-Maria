@@ -1,30 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DoorInteractor : MonoBehaviour
 {
-    public GameObject door;
-
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void FixedUpdate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider col)
-    {
-        if(col.gameObject.tag == "Player")
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
         {
-            door.GetComponent<DoorScript.Door>().OpenDoor();
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
+            if (hit.transform.tag == "door")
+            {
+
+                hit.transform.gameObject.GetComponent<DoorScript.Door>().OpenDoor();
+            }
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            Debug.Log("Did not Hit");
         }
     }
 }
